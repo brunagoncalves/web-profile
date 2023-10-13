@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --bg: url(../img/bg-light.png);
+  --bg-content: #363447;
+  --btn: #7367f0;
+  --text: #ffffff;
+  --line: #4A4556;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--bg) no-repeat top center/cover;
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-profile {
+  max-width: calc(100vw - 24px);
+  padding: 48px 24px;
+  border-radius: 30px;
+  border: 1px solid var(--btn);
+  background: var(--bg-content);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.profile img {
+  border: 2px solid var(--btn);
+  border-radius: 50%;
+  width: 112px;
+  margin-bottom: 28px;
+}
+
+.profile p {
+  margin-top: 8px;
+}
+
+.about {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  max-width: 500px;
+}
+
+.about a {
+  color: #7367f0;
+  font-weight: 700;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.contact button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: var(--btn);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+}
+
+.contact button:hover {
+  border-color: var(--btn);
+  background-color: transparent;
+  color: var(--btn);
+}
+
+.contact button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  margin: 36px auto;
+  background-color: var(--line);
+}
+
+.links-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.links-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.links-social i {
+  font-size: 18px;
+  color: var(--text);
+  padding: 14px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: var(--btn);
+  transition: all ease-out 0.3s;
+}
+
+.links-social i:hover {
+  border: 1px solid var(--btn);
+  background-color: transparent;
+  color: var(--btn);
+}
