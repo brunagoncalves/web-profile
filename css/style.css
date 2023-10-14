@@ -71,7 +71,7 @@ body {
   margin-top: 28px;
 }
 
-.contact button {
+.contact a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,13 +85,13 @@ body {
   transition: all ease-out 0.3s;
 }
 
-.contact button:hover {
+.contact a:hover {
   border-color: var(--btn);
   background-color: transparent;
   color: var(--btn);
 }
 
-.contact button i {
+.contact a i {
   margin-right: 8px;
   font-size: 18px;
 }
