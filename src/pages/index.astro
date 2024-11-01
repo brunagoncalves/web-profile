@@ -1,23 +1,35 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import avatar from "../images/Avatar.png";
+import iconDown from "../icons/Vector.png";
+import iconGithub from "../icons/icon-github.svg";
+import iconHtml from "../icons/icon-html.svg";
+import iconCss from "../icons/icon-css.svg";
+import iconJavascript from "../icons/icon-javascript.svg";
 ---
 
 <Layout title="Profile Web">
   <main>
-    <!-- Navbar -->
-    <h1>Menu</h1>
-
-    <!-- Home -->
-    <h1 class="font-serif">Hello Astro!</h1>
-    <h1>Bio</h1>
-
-    <!-- Techs -->
-    <h1>Tecnologias de meu conhecimento</h1>
-
-    <!-- Works -->
-    <h1>Meus trabalhos</h1>
-
-    <!-- Footer -->
-    <h1>Adicionar links de redes sociais</h1>
+    <!-- Hero -->
+    <div class="w-100 h-screen" style="background-image: url(src/images/Background_Intro.png);">
+      <div class="container mx-auto">
+        <div class="w-100 h-screen text-white flex flex-col items-center justify-center">
+          <Image src={avatar} alt="Avatar" />
+          <p class="font-serif text-[1.1rem] text-gray-500">Hello World! Meu nome é <span class="text-red font-bold">Bruna</span> e sou</p>
+          <h1 class="font-bold text-[4rem] text-gray-600">Desenvolvedora Web</h1>
+          <p class="text-center text-[0.9rem]">Transformo necessidades em aplicações reais, evolventes e funcionais.
+            Desenvolvo sistemas através da minha paixão pela tecnologia,
+            contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+          <div class="flex gap-4">
+            <a class="flex items-center justify-center bg-gray-300 py-2 px-4 gap-2 rounded-full" href="#"><Image src={iconGithub} alt="" />GitHub</a>
+            <a class="flex items-center justify-center bg-gray-300 py-2 px-4 gap-2 rounded-full" href="#"><Image src={iconHtml} alt="" />HTML</a>
+            <a class="flex items-center justify-center bg-gray-300 py-2 px-4 gap-2 rounded-full" href="#"><Image src={iconCss} alt="" />CSS</a>
+            <a class="flex items-center justify-center bg-gray-300 py-2 px-4 gap-2 rounded-full" href="#"><Image src={iconJavascript} alt="" />Javascript</a>
+          </div>
+          <Image src={iconDown} alt="" />
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
